@@ -13,6 +13,9 @@ header {
   color: white;
   text-transform: capitalize;
 }
+nav {
+  font-size: 1.4rem;
+}
 
 header .logo a {
   color: white;
@@ -123,8 +126,31 @@ button > a > i {
   justify-content: space-around;
 }
 .card-container {
-  width: 100%;
+  width: 70%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1rem);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.card {
+  background-color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  padding: 100px 0px;
+  border-radius: 30px;
+}
+.card > p {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  overflow-y: scroll;
+}
+#Projects {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2e2e2e;
+  color: white;
 }
