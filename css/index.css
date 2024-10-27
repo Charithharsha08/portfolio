@@ -934,7 +934,11 @@ form button {
 @media screen and (min-width: 376px) and (max-width: 425px) {
   #home {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  #about {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
