@@ -18,14 +18,27 @@
         
     </div>
     <nav>
-       <ul> 
+       <ul class="nav-links"> 
         <li><a href="#home">Home</a></li>
         <li> <a href="#about">About</a></li>
         <li><a href="#services">services</a></li>
         <li><a href="#Projects">portfolio</a></li>
         <li> <a href="#contact">Contact</a></li>
-    </ul>
+        </ul>
+    
+    <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
     </nav>
+    
+    <div class="menu-panel" id="menu-panel-id">
+        <button class="close-btn" id="btn-close">&times;</button>
+        <ul >
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#Projects">portfolio</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
 </header>
 <body>
     <section>
@@ -169,7 +182,19 @@
             </form>
         </div>
     </section>
-
+    <script>
+        const burger = document.getElementById("burger");
+        const menuPanel = document.getElementById("menu-panel-id");
+        const closeBtn = document.getElementById("btn-close");
+  
+        burger.addEventListener("click", () => {
+          menuPanel.classList.toggle("active");
+        });
+  
+        closeBtn.addEventListener("click", () => {
+          menuPanel.classList.remove("active");
+        });
+      </script>
     <script src="https://kit.fontawesome.com/184e4b6a0b.js" crossorigin="anonymous"></script>
 </body>
 <footer></footer>
