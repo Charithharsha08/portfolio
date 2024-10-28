@@ -57,9 +57,9 @@ header {
   cursor: pointer;
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: -10px;
+  box-shadow: none;
 }
-
 nav {
   font-size: 1.4rem;
 }
@@ -81,6 +81,8 @@ header nav ul li a {
   color: white;
   text-decoration: none;
   margin-right: 30px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 header nav ul li a:hover {
   color: #0047ff;
@@ -121,6 +123,8 @@ p {
 i {
   font-size: 60px;
   color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 span i:hover {
   color: #0047ff;
@@ -305,7 +309,14 @@ form .icons {
 form .icons i {
   font-size: 40px;
   color: white;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
+form .icons i:hover {
+  color: #0047ff;
+  font-size: 60px;
+}
+
 form button {
   align-items: end;
 }
@@ -494,6 +505,12 @@ form button {
   form .icons i {
     font-size: 30px;
     color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  form .icons i:hover {
+    color: #0047ff;
+    font-size: 50px;
   }
   form button {
     align-items: end;
@@ -695,6 +712,13 @@ form button {
   form .icons i {
     font-size: 30px;
     color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  form .icons i:hover {
+    color: #0047ff;
+    font-size: 50px;
   }
   form button {
     align-items: end;
@@ -907,6 +931,13 @@ form button {
   form .icons i {
     font-size: 30px;
     color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  form .icons i:hover {
+    color: #0047ff;
+    font-size: 50px;
   }
   form button {
     align-items: end;
@@ -916,6 +947,9 @@ form button {
     justify-content: flex-end;
     align-items: center;
     padding-right: 30px;
+  }
+  .menu-panel.active {
+    right: 0;
   }
 }
 
@@ -1123,6 +1157,12 @@ form button {
   form .icons i {
     font-size: 30px;
     color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  form .icons i:hover {
+    color: #0047ff;
+    font-size: 50px;
   }
   form button {
     align-items: end;
@@ -1132,6 +1172,9 @@ form button {
     justify-content: flex-end;
     align-items: center;
     padding-right: 30px;
+  }
+  .menu-panel.active {
+    right: 0;
   }
 }
 
@@ -1354,6 +1397,12 @@ form button {
   form .icons i {
     font-size: 30px;
     color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  form .icons i:hover {
+    color: #0047ff;
+    font-size: 50px;
   }
   form button {
     align-items: end;
@@ -1363,6 +1412,9 @@ form button {
     justify-content: flex-end;
     align-items: center;
     padding-right: 30px;
+  }
+  .menu-panel.active {
+    right: 0;
   }
 }
 
@@ -1374,7 +1426,9 @@ form button {
     display: block;
     padding-right: 40px;
   }
-
+  .menu-panel.active {
+    right: 0;
+  }
   header {
     position: fixed;
     padding-left: 10px;
